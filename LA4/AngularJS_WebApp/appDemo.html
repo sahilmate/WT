@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+    <div class="row">
+        <div class="col-sm-12 well">
+            <center><h1>OUR WEB SITE</h1></center>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 well" style="background-color:pink; height:500px;">
+            <ul>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/registration">Registration</a></li>
+                <li><a href="#/login">Login</a></li>
+            </ul>
+        </div>
+        
+        <div class="col-sm-8 well" style="background-color:aqua; height:500px;">
+            <div ng-view></div>
+        </div>
+    </div>
+
+    <script src="appDemo.js"></script>
+</body>
+</html>
